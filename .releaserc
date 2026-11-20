@@ -14,7 +14,7 @@
             { "type": "feat", "release": "minor" },
             { "type": "bump", "release": "patch" },
             { "type": "perf", "release": "patch" },
-            { "type": "build", "scope": "Needs bump", "release": "patch" }
+            { "type": "build", "scope": "Needs bump", "release": "patch" },
         ]
         }
     ],
@@ -23,10 +23,14 @@
         "preset": "conventionalcommits",
         "presetConfig": {
             "types": [
-                { "type": "fix", "section": "🐛 Bug Fixes", "hidden": false },
-                { "type": "feat", "section": "✨ New Features", "hidden": false },
-                { "type": "bump", "section": "🚀 Updated App Support", "hidden": false },
-                { "type": "perf", "section": "🔧 Improvements",  "hidden": false },
+                { "type": "fix", "scope": "internal", "hidden": true },
+                { "type": "feat", "scope": "internal", "hidden": true },
+                { "type": "bump", "scope": "internal", "hidden": true },
+                { "type": "perf", "scope": "internal", "hidden": true },
+                { "type": "fix", "section": "Bug Fixes", "hidden": false },
+                { "type": "feat", "section": "New Features", "hidden": false },
+                { "type": "bump", "section": "Updated App Support", "hidden": false },
+                { "type": "perf", "section": "Improvements",  "hidden": false },
                 { "type": "build", "hidden": true }
             ]
         }
@@ -71,7 +75,8 @@
             "path": "patches/build/libs/patches-!(*sources*|*javadoc*).mpp?(.asc)"
           }
         ],
-        "successComment": false
+        "successComment": false,
+        "failComment": false
       }
     ],
     [
