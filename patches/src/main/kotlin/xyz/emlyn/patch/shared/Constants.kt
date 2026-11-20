@@ -6,6 +6,7 @@ import app.morphe.patcher.patch.Compatibility
 
 object Constants {
     const val LOG_CLASS = "Lxyz/emlyn/patchextension/shared/logging/Logging;"
+    const val SETTINGS_CLASS = "Lxyz/emlyn/patchextension/settings/SettingsActivity;"
 
     val TWITTER_COMPAT = Compatibility(
         name = "X",
