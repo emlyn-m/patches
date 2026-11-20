@@ -8,13 +8,30 @@ Template repository for Morphe Patches.
 >[!NOTE]
 > **[Morphe project](https://morphe.software)**
 
-The easiest way to use these patches is to add them to Morphe Manager (**[click here](https://morphe.software/add-source?github=xyz-user/xyz-patches)**, or manually by URL).
+The easiest way to use these patches is to add them to Morphe Manager (**[click here](https://morphe.software/add-source?github=emlyn-m/patches)**, or manually by URL).
 
 Alternatively, the patches can be applied on desktop (optionally using the [prebuilt releases](/releases)) and sideloaded to the destination device.
 
 ## Available Patches
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/emlyn-m/patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+<details open>
+<summary>✦ X&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**Supported versions:**
+
+| 12.35.0-prod.01 |
+| :---: |
+
+| Patch | Description 
+|----------|----------------|
+| [Bypass Age Verification](#bypass-age-verification) | Disable age verification requirement for sensitive media. |
+| [Disable For You](#disable-for-you) | Disable the 'For You' feed. |
+
+</details>
+
 <!-- PATCHES_END -->
 
 ## License
