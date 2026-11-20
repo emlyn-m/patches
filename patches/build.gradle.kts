@@ -22,6 +22,18 @@ dependencies {
     patchListGeneratorClasspath(libs.gson)
 }
 
+// The morphe plugin adds `extensionConfiguration` directly as a resource srcDir.
+// IDE sync (Gradle 9 + the Kotlin LSP) then resolves it without the project lock
+// and fails, so route it through a Sync task and point resources at the output instead.
+val syncExtensionResources = tasks.register<Sync>("syncExtensionResources") {
+    from(configurations.named("extensionConfiguration"))
+    into(layout.buildDirectory.dir("generated/extensionResources"))
+}
+
+sourceSets.main {
+    resources.setSrcDirs(listOf("src/main/resources", syncExtensionResources))
+}
+
 tasks {
     register<JavaExec>("generatePatchesList") {
         description = "Build patch with patch list"
