@@ -2,16 +2,21 @@ package xyz.emlyn.patch.twitter.noforyou
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.string
+import app.morphe.patcher.resourceLiteral
+import app.morphe.patcher.resource.ResourceType
+
 
 object PreferredTabFingerprint : Fingerprint(
-    definingClass = "Lcom/x/home/tabbed/t;",
-    name = "a",
+    parameters = listOf("Z"),
+    filters = listOf(
+        string("PreferredTabRepo")
+    )
 )
 
 object TabFingerprint : Fingerprint(
     name = "toString",
     filters = listOf(
-        string(", persistLogoWhenDeselected=")
+        string("Tab(homeTabType=")
     )
 )
 
@@ -23,9 +28,8 @@ object ForYouTabFingerprint : Fingerprint(
 )
 
 object BuildTabFingerprint : Fingerprint(
-    definingClass = "Lcom/x/home/tabbed/s;",
     name = "<init>",
     filters = listOf(
-        string("co_timeline_topic_filter_enabled")
+        resourceLiteral(ResourceType.STRING, "swish_following_tweets")
     )
 )
