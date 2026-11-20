@@ -19,4 +19,16 @@ object Constants {
             )
         )
     )
+
+    val INSTAGRAM_COMPAT = Compatibility(
+        name = "Instagram",
+        packageName = "com.instagram.android",
+        apkFileType = ApkFileType.APKM,
+        appIconColor = 0xe1306c,
+        targets = listOf(
+            AppTarget(
+                version = "454.0.0.54.77"
+            )
+        )
+    )
 }
