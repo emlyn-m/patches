@@ -39,10 +39,10 @@ public class Settings {
     }
 
     @SuppressWarnings("unchecked")
-    public static <T> T getEntry(String id, SettingsEntry<T> entry) {
+    static <T> T getEntry(SettingsEntry<T> entry) {
         try {
             Context ctx = context();
-            SharedPreferences prefs = ctx.getSharedPreferences(id, Context.MODE_PRIVATE);
+            SharedPreferences prefs = ctx.getSharedPreferences(entry.id(), Context.MODE_PRIVATE);
 
             if (entry.type == Integer.class) {
                 return (T) Integer.valueOf(prefs.getInt(entry.key(), ((Integer) entry.defaultValue())));
@@ -60,10 +60,10 @@ public class Settings {
         return (T) null;
     }
 
-    public static <T> void putEntry(String id, SettingsEntry<T> entry, T value) {
+    static <T> void putEntry(SettingsEntry<T> entry, T value) {
         try {
             Context ctx = context();
-            SharedPreferences.Editor editor = ctx.getSharedPreferences(id, Context.MODE_PRIVATE).edit();
+            SharedPreferences.Editor editor = ctx.getSharedPreferences(entry.id(), Context.MODE_PRIVATE).edit();
 
             if (entry.type == Integer.class) {
                 editor.putInt(entry.key(), (Integer) value);

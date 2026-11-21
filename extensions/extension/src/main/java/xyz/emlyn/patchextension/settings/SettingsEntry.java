@@ -1,23 +1,20 @@
 package xyz.emlyn.patchextension.settings;
 
-import java.util.function.BiConsumer;
-import java.util.function.Function;
-
 public class SettingsEntry<T> {
+    private final String id;
     private final String key;
-    private final T defaultValue;
     public final Class<T> type;
+    private T defaultValue;
 
-    private final Function<SettingsEntry<T>, T> get;
-    private final BiConsumer<SettingsEntry<T>, T> put;
-
-    private SettingsEntry(String key, T defaultValue, Class<T> type, Function<SettingsEntry<T>, T> get,
-            BiConsumer<SettingsEntry<T>, T> put) {
+    private SettingsEntry(String id, String key, T defaultValue, Class<T> type) {
+        this.id = id;
         this.key = key;
-        this.defaultValue = defaultValue;
         this.type = type;
-        this.get = get;
-        this.put = put;
+        this.defaultValue = defaultValue;
+    }
+
+    public String id() {
+        return this.id;
     }
 
     public String key() {
@@ -28,26 +25,27 @@ public class SettingsEntry<T> {
         return this.defaultValue;
     }
 
+    public void setDefault(T def) {
+        this.defaultValue = def;
+    }
+
     public T get() {
-        return get.apply(this);
+        return Settings.getEntry(this);
     }
 
     public void put(T t) {
-        put.accept(this, t);
+        Settings.putEntry(this, t);
     }
 
-    public static SettingsEntry<Integer> Int(String key, int def, Function<SettingsEntry<Integer>, Integer> get,
-            BiConsumer<SettingsEntry<Integer>, Integer> put) {
-        return new SettingsEntry<>(key, def, Integer.class, get, put);
+    public static SettingsEntry<Integer> Int(String id, String key, int def) {
+        return new SettingsEntry<>(id, key, def, Integer.class);
     }
 
-    public static SettingsEntry<String> String(String key, String def, Function<SettingsEntry<String>, String> get,
-            BiConsumer<SettingsEntry<String>, String> put) {
-        return new SettingsEntry<>(key, def, String.class, get, put);
+    public static SettingsEntry<String> String(String id, String key, String def) {
+        return new SettingsEntry<>(id, key, def, String.class);
     }
 
-    public static SettingsEntry<Boolean> Boolean(String key, Boolean def, Function<SettingsEntry<Boolean>, Boolean> get,
-            BiConsumer<SettingsEntry<Boolean>, Boolean> put) {
-        return new SettingsEntry<>(key, def, Boolean.class, get, put);
+    public static SettingsEntry<Boolean> Boolean(String id, String key, Boolean def) {
+        return new SettingsEntry<>(id, key, def, Boolean.class);
     }
 }
