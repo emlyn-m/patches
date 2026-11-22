@@ -15,7 +15,7 @@ Alternatively, the patches can be applied on desktop (optionally using the [preb
 ## Available Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.1](https://github.com/emlyn-m/patches/releases/tag/v1.0.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.0.0-dev.2](https://github.com/emlyn-m/patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
 <summary>✦ X&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>

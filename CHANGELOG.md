@@ -1,3 +1,5 @@
+## [1.0.0-dev.2](https://github.com/emlyn-m/patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-11-22)
+
 ## 1.0.0-dev.1 (2026-11-20)
 
 ### Bug Fixes
