@@ -15,9 +15,9 @@ Alternatively, the patches can be applied on desktop (optionally using the [preb
 ## Available Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.2](https://github.com/emlyn-m/patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.0.0-dev.3](https://github.com/emlyn-m/patches/releases/tag/v1.0.0-dev.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
-<summary>✦ X&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>✦ X&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **Supported versions:**
@@ -29,6 +29,22 @@ Alternatively, the patches can be applied on desktop (optionally using the [preb
 |----------|----------------|
 | [Bypass Age Verification](#bypass-age-verification) | Disable age verification requirement for sensitive media. |
 | [Disable For You](#disable-for-you) | Disable the 'For You' feed. |
+| [qbf](#qbf) | todo. |
+
+</details>
+
+<details open>
+<summary>✦ Instagram&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**Supported versions:**
+
+| 454.0.0.54.77 |
+| :---: |
+
+| Patch | Description 
+|----------|----------------|
+| [qbf](#qbf) | todo. |
 
 </details>
 

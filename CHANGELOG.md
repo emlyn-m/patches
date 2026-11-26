@@ -1,3 +1,9 @@
+## [1.0.0-dev.3](https://github.com/emlyn-m/patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-11-26)
+
+### New Features
+
+* **qbf:** add ai detection for instagram, twitter ([8cbd0d1](https://github.com/emlyn-m/patches/commit/8cbd0d1570b26b0bc518788a8261837af64c624d))
+
 ## [1.0.0-dev.2](https://github.com/emlyn-m/patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-11-22)
 
 ## 1.0.0-dev.1 (2026-11-20)

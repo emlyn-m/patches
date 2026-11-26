@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0-dev.2",
+  "version": "1.0.0-dev.3",
   "patches": [
     {
       "name": "Bypass Age Verification",
@@ -53,6 +53,132 @@
         }
       ],
       "options": []
+    },
+    {
+      "name": "qbf",
+      "description": "todo.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.instagram.android",
+          "name": "Instagram",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#E1306C",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "454.0.0.54.77",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "apiKey",
+          "title": "API Key",
+          "description": "Sent as `x-api-key`",
+          "required": true,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "autoOverlay",
+          "title": "Automatically show overlay once scanned",
+          "description": null,
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "apiImg",
+          "title": "Image API override",
+          "description": "POST $API, GET $API/{id}",
+          "required": false,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "qbf",
+      "description": "todo.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.twitter.android",
+          "name": "X",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1DA1F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "12.35.0-prod.01",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "apiKey",
+          "title": "API Key",
+          "description": "Sent as `x-api-key`",
+          "required": true,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "autoscan",
+          "title": "Automatically scan posts",
+          "description": null,
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "autooverlay",
+          "title": "Automatically show overlay once scanned",
+          "description": null,
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "apiText",
+          "title": "Text API override",
+          "description": "POST $API, GET $API/{id}",
+          "required": false,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "apiImg",
+          "title": "Image API override",
+          "description": "POST $API, GET $API/{id}",
+          "required": false,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        }
+      ]
     }
   ]
 }

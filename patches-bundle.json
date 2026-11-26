@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-22T13:00:10",
-  "description": "## [1.0.0-dev.2](https://github.com/emlyn-m/patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-11-22)",
-  "download_url": "https://github.com/emlyn-m/patches/releases/download/v1.0.0-dev.2/patches-1.0.0-dev.2.mpp",
+  "created_at": "2026-11-26T03:39:30",
+  "description": "## [1.0.0-dev.3](https://github.com/emlyn-m/patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-11-26)\n\n### New Features\n\n* **qbf:** add ai detection for instagram, twitter ([8cbd0d1](https://github.com/emlyn-m/patches/commit/8cbd0d1570b26b0bc518788a8261837af64c624d))",
+  "download_url": "https://github.com/emlyn-m/patches/releases/download/v1.0.0-dev.3/patches-1.0.0-dev.3.mpp",
   "signature_download_url": "",
-  "version": "1.0.0-dev.2"
+  "version": "1.0.0-dev.3"
 }
